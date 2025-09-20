@@ -1,13 +1,8 @@
 {
   "version": 3,
   "build": {
-    "env": {},
-
-    "commands": {
-      "build": "npm run build"
-    },
-
-    "outputDirectory": "dist"
+    "command": "npm run build",
+    "outputDirectory": "dist/public"
   },
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
