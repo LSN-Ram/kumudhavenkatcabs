@@ -66,7 +66,7 @@ export default function BookingForm() {
       `Budget: ${data.budget || "Not specified"}\n` +
       `Special Requirements: ${data.requirements || "None"}`;
 
-    const phoneNumber = "919629764058"; // Your WhatsApp number (without +)
+    const phoneNumber = "917388886627"; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank");
