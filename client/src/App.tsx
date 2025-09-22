@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function Router() {
   return (
@@ -17,12 +18,21 @@ function Router() {
 
 function App() {
   return (
+      <HelmetProvider >
+         <Helmet>
+        <title>Kumudha Cabs - Taxi & Cab Service</title>
+        <meta
+          name="description"
+          content="Book reliable taxi and cab services with Kumudha Cabs. Affordable rides, professional drivers, and 24/7 availability."
+        />
+      </Helmet>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>
+    </HelmetProvider>
   );
 }
 
