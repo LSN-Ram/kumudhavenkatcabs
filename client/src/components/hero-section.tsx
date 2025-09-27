@@ -1,6 +1,6 @@
 import BookingForm from "./booking-form";
 import { Button } from "@/components/ui/button";
-import { Plane, Play } from "lucide-react";
+import { Plane } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -23,19 +23,31 @@ export default function HeroSection() {
               Your Journey <br />
               <span className="gradient-text text-white">Starts Here</span>
             </h1>
-            <p className="text-xl mb-8 text-gray-200">
-              Professional cab services and travel booking with personalized service. Plan your perfect trip with Kumudhacabs and enjoy seamless travel experiences.
+            <p className="text-xl mb-6 text-gray-200">
+              Professional cab services and travel booking with personalized
+              service. Plan your perfect trip with Kumudhacabs and enjoy
+              seamless travel experiences.
             </p>
+
+            {/* SEO Optimized Paragraph */}
+            <p className="text-lg mb-8 text-gray-200 leading-relaxed">
+              Kumudha Cabs offers reliable and affordable <strong>cab service in Chennai</strong>. 
+              Whether you need a quick <strong>local taxi service</strong>, a comfortable 
+              <strong> Chennai airport cab</strong>, or an <strong>outstation taxi from Chennai 
+              to Bangalore, Tirupati, or Pondicherry</strong>, we’ve got you covered. 
+              Our 24x7 <strong>taxi booking in Chennai</strong> ensures safe, on-time rides 
+              at the best prices.
+            </p>
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-primary hover:bg-blue-600 text-primary-foreground px-8 py-4 font-semibold transition-all transform hover:scale-105"
                 data-testid="button-explore-destinations"
               >
                 <Plane className="mr-2 h-5 w-5" />
                 Explore Destinations
               </Button>
-              
             </div>
           </div>
 

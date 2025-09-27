@@ -18,9 +18,10 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Plane className="text-primary h-8 w-8" />
-              <h1 className="text-2xl font-bold gradient-text">Kumudhacabs</h1>
+              <h1 className="text-2xl font-bold gradient-text">
+                Kumudha Cabs
+              </h1>
             </div>
-           
           </div>
         </div>
       </nav>
